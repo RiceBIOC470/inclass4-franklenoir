@@ -1,3 +1,5 @@
+%AW: looks good. see 1 comment below. 0.99/1. 
+
 %Inclass assignment 4. Due at the start of class on 9/12/17
 
 %Walter Frank Lenoir
@@ -40,5 +42,7 @@ var1num = cellfun(@str2num,line1);
 % than or equal to 10 and false if it is less than 10. 
 %Walter Frank Lenoir
 
+%AW: this is basically correct, but be careful as you have written your function t will be a double that stores the numerical
+% value of 0 or 1. you must explicitly cast as logical or use the keywords true/false to get a logical. -0.01. 
 t = greaterthanten(var1num);
 disp(t);
